@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --a: 0;
+    --b: 0;
+    --c: 0;
+}
+
+body {
+    background-color: rgb(var(--a), var(--b), var(--c));
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.clock h1 {
+    display: inline;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+    font-size: 6rem;
+}
+
+.clock h4 {
+    font-family: 'Oxygen', sans-serif;
+    color: aliceblue;
+}
+
+/* ----------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+    .clock h1 {
+        font-size: 2.6rem;
+    }
+
+    .clock h4 {
+        font-size: 0.8rem;
+    }
+}
